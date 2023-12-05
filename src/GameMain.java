@@ -12,7 +12,7 @@ public class GameMain {
     /** The current player (of enum Seed) */
     private Seed  currentPlayer;
 
-    private static Scanner in = new Scanner(System.in);
+    private static Scanner sc = new Scanner(System.in);
 
     /** Constructor to setup the game */
     public GameMain() {
@@ -61,8 +61,8 @@ public class GameMain {
         do {
             String icon = currentPlayer.getIcon();
             System.out.print("Player '" + icon + "', enter your move (row[1-3] column[1-3]): ");
-            int row = in.nextInt() - 1;   // [0-2]
-            int col = in.nextInt() - 1;
+            int row = sc.nextInt() - 1;   // [0-2]
+            int col = sc.nextInt() - 1;
             if (row >= 0 && row < Board.ROWS && col >= 0 && col < Board.COLS
                     && board.cells[row][col].content == Seed.NO_SEED) {
                 // Update cells[][] and return the new game state after the move

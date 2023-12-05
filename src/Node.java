@@ -30,11 +30,17 @@ public class Node {
 //        traverseTreePreOrder(root.right);
 //    }
 
-    String item;
+    String name;
     Node left, right;
 
     public Node(String name) {
-        item = name;
+        this.name = name;
         left = right = null;
+    }
+
+    int data;
+
+    public Node(int data) {
+        this.data = data;
     }
 }

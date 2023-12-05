@@ -11,7 +11,7 @@ public class Tree {
             return;
 
         // traverse the root node
-        System.out.print(node.item + "->");
+//        System.out.print(node.item + "->");
         // traverse the left child
         preorder(node.left);
         // traverse the right child

@@ -53,6 +53,19 @@ public class TTTMain extends JPanel {
             }
         });
 
+        newGame.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e) {
+                newGameActionPerformed(e);
+            }
+        });
+
+        quit.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                quitActionPerformed(e);
+            }
+        });
+
         // Setup the status bar (JLabel) to display status message
         statusBar = new JLabel();
         statusBar.setFont(FONT_STATUS);
@@ -113,17 +126,43 @@ public class TTTMain extends JPanel {
         }
     }
 
+    public void quitActionPerformed(ActionEvent evt){
+        System.exit(0);
+    }
+
+    public void newGameActionPerformed(ActionEvent evt) {
+        newGame();
+    }
+
     /** The entry "main" method */
     public static void main(String[] args) {
         // Run GUI construction codes in Event-Dispatching thread for thread safety
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 JFrame frame = new JFrame(TITLE);
+
+                //Create Menu Bar
+                JMenuBar menubar = new JMenuBar();
+                JMenu game = new JMenu("Game");
+                JMenuItem newGame = new JMenuItem("New Game");
+                JMenuItem quit = new JMenuItem("Quit");
+                JMenu background = new JMenu("Background");
+                JMenuItem bg1 = new JMenuItem("???");
+
                 // Set the content-pane of the JFrame to an instance of main JPanel
                 frame.setContentPane(new TTTMain());
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setLocationRelativeTo(null); // center the application window
+
+                //Add to menubar
+                menubar.add(game);
+                game.add(newGame);
+                game.add(quit);
+                menubar.add(background);
+                background.add(bg1);
+                frame.setJMenuBar(menubar);
+
                 frame.setVisible(true);            // show it
             }
         });

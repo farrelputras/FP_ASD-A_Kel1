@@ -1,3 +1,5 @@
+package TTT_Tutorial;
+
 public class BinarySearchTree {
 
     Node root;

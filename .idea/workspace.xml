@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81e19ce3-1e1a-47d0-b54a-7e2cb75caead" name="Changes" comment="TTT Object-Oriented">
+    <list default="true" id="81e19ce3-1e1a-47d0-b54a-7e2cb75caead" name="Changes" comment="Rename Project">
+      <change afterPath="$PROJECT_DIR$/src/TTTGraphicOOP/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TTTGraphicOOP/Seed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TTTGraphicOOP/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TTTGraphics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Seed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Seed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TTTConsoleNonOO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TTTConsoleNonOO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -52,7 +62,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "C:/Users/ferna/OneDrive - Institut Teknologi Sepuluh Nopember/04_MATA KULIAH/SEMESTER 3/ASD [A]/bismillah tictactoe 3",
+    "last_opened_file_path": "C:/Users/ferna/OneDrive - Institut Teknologi Sepuluh Nopember/04_MATA KULIAH/SEMESTER 3/ASD [A]/TicTacToe_FP_ASD-A_Kel1",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
@@ -93,12 +103,20 @@
       <option name="project" value="LOCAL" />
       <updated>1701738367855</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Rename Project">
+      <created>1701741725752</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701741725752</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="TTT Object-Oriented" />
-    <option name="LAST_COMMIT_MESSAGE" value="TTT Object-Oriented" />
+    <MESSAGE value="Rename Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename Project" />
   </component>
 </project>

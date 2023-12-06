@@ -1,3 +1,5 @@
+package TTT_Tutorial;
+
 public class Main {
     public static void main(String[] args) {
         // create object of tree
@@ -16,7 +18,7 @@ public class Main {
         System.out.println("\nPreorder traversal ");
         tree.preorder(tree.root);
 
-        //Binary Search Tree = A tree data structure, where each node is greater than it's left child,
+        //Binary Search TTT_Tutorial.Tree = A tree data structure, where each node is greater than it's left child,
         //		                         but less than it's right.
 
         //					   benefit: easy to locate a node when they are in this order

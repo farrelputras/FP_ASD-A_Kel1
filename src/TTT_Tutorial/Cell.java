@@ -1,7 +1,16 @@
+package TTT_Tutorial;
+
 /**
- * The Cell class models each individual cell of the TTT 3x3 grid.
+ * ES234317-Algorithm and Data Structures
+ * Semester Ganjil, 2023/2024
+ * Group Capstone Project
+ * Group #1
+ * 1 - 5026221035 - Mufidhatul Nafisa
+ * 2 - 5026221120 - M. Shalahuddin Arif Laksono
+ * 3 - 5026221102 - Fernandio Farrel Putra S.
  */
-public class Cell {  // save as "Cell.java"
+
+public class Cell {  // save as "TTT_Tutorial.Cell.java"
     // Define properties (package-visible)
     /** Content of this cell (CROSS, NOUGHT, NO_SEED) */
     Seed content;

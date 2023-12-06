@@ -1,3 +1,13 @@
+package TTT_Tutorial; /**
+ * ES234317-Algorithm and Data Structures
+ * Semester Ganjil, 2023/2024
+ * Group Capstone Project
+ * Group #1
+ * 1 - 5026221035 - Mufidhatul Nafisa
+ * 2 - 5026221120 - M. Shalahuddin Arif Laksono
+ * 3 - 5026221102 - Fernandio Farrel Putra S.
+ */
+
 import java.util.Scanner;
 /**
  * Tic-Tac-Toe: Two-player, console-based, non-graphics, non-OO version.
@@ -7,7 +17,7 @@ import java.util.Scanner;
 public class TTTConsoleNonOO {
     // Define named constants for:
     //  1. Player: using CROSS and NOUGHT
-    //  2. Cell contents: using CROSS, NOUGHT and NO_SEED
+    //  2. TTT_Tutorial.Cell contents: using CROSS, NOUGHT and NO_SEED
     public static final int CROSS   = 0;
     public static final int NOUGHT  = 1;
     public static final int NO_SEED = 2;

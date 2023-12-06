@@ -1,5 +1,7 @@
+package TTT_Tutorial;
+
 public class Tree {
-    // root of Tree
+    // root of TTT_Tutorial.Tree
     Node root;
 
     Tree() {

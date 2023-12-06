@@ -1,3 +1,13 @@
+package TTT_Tutorial; /**
+ * ES234317-Algorithm and Data Structures
+ * Semester Ganjil, 2023/2024
+ * Group Capstone Project
+ * Group #1
+ * 1 - 5026221035 - Mufidhatul Nafisa
+ * 2 - 5026221120 - M. Shalahuddin Arif Laksono
+ * 3 - 5026221102 - Fernandio Farrel Putra S.
+ */
+
 import java.util.Scanner;
 /**
  * The main class for the Tic-Tac-Toe (Console-OO, non-graphics version)
@@ -7,9 +17,9 @@ public class GameMain {
     // Define properties
     /** The game board */
     private Board board;
-    /** The current state of the game (of enum State) */
+    /** The current state of the game (of enum TTT_Tutorial.State) */
     private State currentState;
-    /** The current player (of enum Seed) */
+    /** The current player (of enum TTT_Tutorial.Seed) */
     private Seed  currentPlayer;
 
     private static Scanner sc = new Scanner(System.in);

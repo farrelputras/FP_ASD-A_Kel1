@@ -1,13 +1,23 @@
-/**
- * The Board class models the TTT game-board of 3x3 cells.
+package TTT_Tutorial; /**
+ * ES234317-Algorithm and Data Structures
+ * Semester Ganjil, 2023/2024
+ * Group Capstone Project
+ * Group #1
+ * 1 - 5026221035 - Mufidhatul Nafisa
+ * 2 - 5026221120 - M. Shalahuddin Arif Laksono
+ * 3 - 5026221102 - Fernandio Farrel Putra S.
  */
-public class Board {  // save as "Board.java"
+
+/**
+ * The TTT_Tutorial.Board class models the TTT game-board of 3x3 cells.
+ */
+public class Board {  // save as "TTT_Tutorial.Board.java"
     // Define named constants for the grid
     public static final int ROWS = 5;
     public static final int COLS = 5;
 
     // Define properties (package-visible)
-    /** A board composes of [ROWS]x[COLS] Cell instances */
+    /** A board composes of [ROWS]x[COLS] TTT_Tutorial.Cell instances */
     Cell[][] cells;
 
     /** Constructor to initialize the game board */

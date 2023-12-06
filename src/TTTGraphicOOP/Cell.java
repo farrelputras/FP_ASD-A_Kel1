@@ -11,6 +11,10 @@
 package TTTGraphicOOP;
 
 import java.awt.*;
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 /**
  * The TTT_Tutorial.Cell class models each individual cell of the game board.
  */
@@ -21,6 +25,9 @@ public class Cell {
     public static final int PADDING = SIZE / 5;
     public static final int SEED_SIZE = SIZE - PADDING * 2;
     public static final int SEED_STROKE_WIDTH = 8; // pen's stroke width
+
+    private BufferedImage crossImage;  // Gambar untuk ikon X
+    private BufferedImage noughtImage; // Gambar untuk ikon O
 
     // Define properties (package-visible)
     /** Content of this cell (TTT_Tutorial.Seed.EMPTY, TTT_Tutorial.Seed.CROSS, or TTT_Tutorial.Seed.NOUGHT) */
@@ -33,6 +40,14 @@ public class Cell {
         this.row = row;
         this.col = col;
         content = Seed.NO_SEED;
+        
+        // Load gambar X dan O di sini (pastikan pathnya sesuai)
+        try {
+            crossImage = ImageIO.read(new File("treenatal.png"));
+            noughtImage = ImageIO.read(new File("boxnatal.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /** Reset this cell's content to EMPTY, ready for new game */
@@ -42,22 +57,13 @@ public class Cell {
 
     /** Paint itself on the graphics canvas, given the Graphics context */
     public void paint(Graphics g) {
-        // Use Graphics2D which allows us to set the pen's stroke
-        Graphics2D g2d = (Graphics2D)g;
-        g2d.setStroke(new BasicStroke(SEED_STROKE_WIDTH,
-                BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
-        // Draw the TTT_Tutorial.Seed if it is not empty
         int x1 = col * SIZE + PADDING;
         int y1 = row * SIZE + PADDING;
+
         if (content == Seed.CROSS) {
-            g2d.setColor(TTTMain.COLOR_CROSS);  // draw a 2-line cross
-            int x2 = (col + 1) * SIZE - PADDING;
-            int y2 = (row + 1) * SIZE - PADDING;
-            g2d.drawLine(x1, y1, x2, y2);
-            g2d.drawLine(x2, y1, x1, y2);
-        } else if (content == Seed.NOUGHT) {  // draw a circle
-            g2d.setColor(TTTMain.COLOR_NOUGHT);
-            g2d.drawOval(x1, y1, SEED_SIZE, SEED_SIZE);
+            g.drawImage(crossImage, x1, y1, SEED_SIZE, SEED_SIZE, null);
+        } else if (content == Seed.NOUGHT) {
+            g.drawImage(noughtImage, x1, y1, SEED_SIZE, SEED_SIZE, null);
         }
     }
 }

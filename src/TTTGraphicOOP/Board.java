@@ -11,6 +11,8 @@
 package TTTGraphicOOP;
 
 import java.awt.*;
+import javax.swing.ImageIcon;
+
 /**
  * The TTT_Tutorial.Board class models the ROWS-by-COLS game board.
  */
@@ -29,10 +31,12 @@ public class Board {
     // Define properties (package-visible)
     /** Composes of 2D array of ROWS-by-COLS TTT_Tutorial.Cell instances */
     Cell[][] cells;
+    private Image backgroundImage;  // Gambar latar belakang
 
     /** Constructor to initialize the game board */
     public Board() {
         initGame();
+        loadImage();  // Memuat gambar latar belakang
     }
 
     /** Initialize the game objects (run once) */
@@ -96,6 +100,9 @@ public class Board {
 
     /** Paint itself on the graphics canvas, given the Graphics context */
     public void paint(Graphics g) {
+        // Draw the background image
+        g.drawImage(backgroundImage, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT, null);
+
         // Draw the grid-lines
         g.setColor(COLOR_GRID);
         for (int row = 1; row < ROWS; ++row) {
@@ -115,5 +122,12 @@ public class Board {
                 cells[row][col].paint(g);  // ask the cell to paint itself
             }
         }
+    }
+
+    /** Memuat gambar latar belakang dari file */
+    private void loadImage() {
+        // Ganti "path/to/your/background.jpg" dengan path yang benar ke file gambar latar belakang Anda
+        ImageIcon icon = new ImageIcon("C:\\Kuliah\\SEMESTER 3\\ASD\\TicTacToe_FP_ASD-A_Kel1-master\\src\\TTTGraphicOOP\\BackgroundNatal.jpg");
+        backgroundImage = icon.getImage();
     }
 }

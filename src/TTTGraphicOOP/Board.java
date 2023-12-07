@@ -127,7 +127,7 @@ public class Board {
     /** Memuat gambar latar belakang dari file */
     private void loadImage() {
         // Ganti "path/to/your/background.jpg" dengan path yang benar ke file gambar latar belakang Anda
-        ImageIcon icon = new ImageIcon("C:\\Kuliah\\SEMESTER 3\\ASD\\TicTacToe_FP_ASD-A_Kel1-master\\src\\TTTGraphicOOP\\BackgroundNatal.jpg");
+        ImageIcon icon = new ImageIcon("BackgroundNatal.jpg");
         backgroundImage = icon.getImage();
     }
 }

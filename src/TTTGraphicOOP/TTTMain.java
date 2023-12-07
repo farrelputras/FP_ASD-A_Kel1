@@ -53,18 +53,18 @@ public class TTTMain extends JPanel {
             }
         });
 
-        newGame.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent e) {
-                newGameActionPerformed(e);
-            }
-        });
-
-        quit.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                quitActionPerformed(e);
-            }
-        });
+//        newGame.addActionListener(new ActionListener()
+//        {
+//            public void actionPerformed(ActionEvent e) {
+//                newGameActionPerformed(e);
+//            }
+//        });
+//
+//        quit.addActionListener(new ActionListener() {
+//            public void actionPerformed(ActionEvent e) {
+//                quitActionPerformed(e);
+//            }
+//        });
 
         // Setup the status bar (JLabel) to display status message
         statusBar = new JLabel();

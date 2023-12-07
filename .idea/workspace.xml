@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81e19ce3-1e1a-47d0-b54a-7e2cb75caead" name="Changes" comment="TTT Graph OOP // New Package">
-      <change afterPath="$PROJECT_DIR$/src/TTTGraphicOOP/TicGUI.java" afterDir="false" />
+    <list default="true" id="81e19ce3-1e1a-47d0-b54a-7e2cb75caead" name="Changes" comment="Button Onyx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TTTGraphicOOP/BackgroundNatal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/BackgroundNatal.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TTTGraphicOOP/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TTTGraphicOOP/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TTTGraphicOOP/TTTMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TTTGraphicOOP/TTTMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +25,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -48,15 +48,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "C:/Users/ferna/OneDrive - Institut Teknologi Sepuluh Nopember/04_MATA KULIAH/SEMESTER 3/ASD [A]/TicTacToe_FP_ASD-A_Kel1",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ferna/OneDrive - Institut Teknologi Sepuluh Nopember/04_MATA KULIAH/SEMESTER 3/ASD [A]/TicTacToe_FP_ASD-A_Kel1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -108,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701846089456</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Button Onyx">
+      <created>1701852384341</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701852384341</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Button Onyx">
+      <created>1701852533173</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701852533173</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -116,6 +130,7 @@
     <MESSAGE value="TTT Object-Oriented" />
     <MESSAGE value="Rename Project" />
     <MESSAGE value="TTT Graph OOP // New Package" />
-    <option name="LAST_COMMIT_MESSAGE" value="TTT Graph OOP // New Package" />
+    <MESSAGE value="Button Onyx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Button Onyx" />
   </component>
 </project>

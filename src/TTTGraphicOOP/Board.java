@@ -11,6 +11,7 @@
 package TTTGraphicOOP;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
 
 /**
@@ -31,12 +32,13 @@ public class Board {
     // Define properties (package-visible)
     /** Composes of 2D array of ROWS-by-COLS TTT_Tutorial.Cell instances */
     Cell[][] cells;
-    private Image backgroundImage;  // Gambar latar belakang
+    private Image backgroundImage;
+    private String[] bgArray = {"BackgroundNatal.jpg", "BackgroundNatal1.jpg"};  // Gambar latar belakang
 
     /** Constructor to initialize the game board */
     public Board() {
         initGame();
-        loadImage();  // Memuat gambar latar belakang
+        loadImage(1);  // Memuat gambar latar belakang
     }
 
     /** Initialize the game objects (run once) */
@@ -125,9 +127,21 @@ public class Board {
     }
 
     /** Memuat gambar latar belakang dari file */
-    private void loadImage() {
+    private void loadImage(int idx) {
         // Ganti "path/to/your/background.jpg" dengan path yang benar ke file gambar latar belakang Anda
-        ImageIcon icon = new ImageIcon("BackgroundNatal.jpg");
-        backgroundImage = icon.getImage();
+        try {
+            ImageIcon icon = new ImageIcon(bgArray[idx]);
+            backgroundImage = icon.getImage();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
     }
+
+    public void chooseBg(ActionEvent e, int idx){
+        loadImage(idx);
+        TTTMain main = new TTTMain();
+        main.repaint();
+    }
+
 }

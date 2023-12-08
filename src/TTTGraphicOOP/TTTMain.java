@@ -53,18 +53,6 @@ public class TTTMain extends JPanel {
             }
         });
 
-//        newGame.addActionListener(new ActionListener()
-//        {
-//            public void actionPerformed(ActionEvent e) {
-//                newGameActionPerformed(e);
-//            }
-//        });
-//
-//        quit.addActionListener(new ActionListener() {
-//            public void actionPerformed(ActionEvent e) {
-//                quitActionPerformed(e);
-//            }
-//        });
 
         // Setup the status bar (JLabel) to display status message
         statusBar = new JLabel();
@@ -131,6 +119,7 @@ public class TTTMain extends JPanel {
     }
 
     public void newGameActionPerformed(ActionEvent evt) {
+        repaint();
         newGame();
     }
 
@@ -147,10 +136,15 @@ public class TTTMain extends JPanel {
                 JMenuItem newGame = new JMenuItem("New Game");
                 JMenuItem quit = new JMenuItem("Quit");
                 JMenu background = new JMenu("Background");
-                JMenuItem bg1 = new JMenuItem("???");
+                JMenuItem bg1 = new JMenuItem("Snow");
+                JMenuItem bg2 = new JMenuItem("Tree");
+
+                //Setup main JPanel
+                TTTMain mainPanel= new TTTMain();
+                Board board1 = new Board();
 
                 // Set the content-pane of the JFrame to an instance of main JPanel
-                frame.setContentPane(new TTTMain());
+                frame.setContentPane(mainPanel);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setLocationRelativeTo(null); // center the application window
@@ -161,7 +155,38 @@ public class TTTMain extends JPanel {
                 game.add(quit);
                 menubar.add(background);
                 background.add(bg1);
+                background.add(bg2);
                 frame.setJMenuBar(menubar);
+
+                newGame.addActionListener(new ActionListener()
+                {
+                    public void actionPerformed(ActionEvent e) {
+                        mainPanel.newGameActionPerformed(e);
+                    }
+                });
+
+                quit.addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        mainPanel.quitActionPerformed(e);
+                    }
+                });
+
+                bg1.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        board1.chooseBg(e, 0);
+                        mainPanel.repaint();
+                    }
+                });
+
+                bg2.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        board1.chooseBg(e, 1);
+                        mainPanel.repaint();
+                    }
+                });
+
 
                 frame.setVisible(true);            // show it
             }

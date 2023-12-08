@@ -127,7 +127,7 @@ public class Board {
     }
 
     /** Memuat gambar latar belakang dari file */
-    private void loadImage(int idx) {
+    public void loadImage(int idx) {
         // Ganti "path/to/your/background.jpg" dengan path yang benar ke file gambar latar belakang Anda
         try {
             ImageIcon icon = new ImageIcon(bgArray[idx]);
@@ -138,10 +138,6 @@ public class Board {
 
     }
 
-    public void chooseBg(ActionEvent e, int idx){
-        loadImage(idx);
-        TTTMain main = new TTTMain();
-        main.repaint();
-    }
+
 
 }

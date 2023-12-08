@@ -123,6 +123,11 @@ public class TTTMain extends JPanel {
         newGame();
     }
 
+    public void chooseBg(ActionEvent e, int idx){
+        board.loadImage(idx);
+        repaint();
+    }
+
     /** The entry "main" method */
     public static void main(String[] args) {
         // Run GUI construction codes in Event-Dispatching thread for thread safety
@@ -174,16 +179,14 @@ public class TTTMain extends JPanel {
                 bg1.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        board1.chooseBg(e, 0);
-                        mainPanel.repaint();
+                        mainPanel.chooseBg(e, 0);
                     }
                 });
 
                 bg2.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        board1.chooseBg(e, 1);
-                        mainPanel.repaint();
+                        mainPanel.chooseBg(e, 1);
                     }
                 });
 

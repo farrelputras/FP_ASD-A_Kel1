@@ -133,6 +133,9 @@ public class TTTMain extends JPanel {
         // Run GUI construction codes in Event-Dispatching thread for thread safety
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
+                //pop up untuk welcome
+                JOptionPane.showMessageDialog(null, "Welcome! click OK to start game!", "Tic Tac Toe
+
                 JFrame frame = new JFrame(TITLE);
 
                 //Create Menu Bar

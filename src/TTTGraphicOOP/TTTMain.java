@@ -144,7 +144,7 @@ public class TTTMain extends JPanel {
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 //pop up untuk welcome
-                JOptionPane.showMessageDialog(null, "Welcome! click OK to start game!", "Tic Tac Toe
+                JOptionPane.showMessageDialog(null, "Welcome! click OK to start game!", "Tic Tac Toe", JOptionPane.INFORMATION_MESSAGE);
 
                 JFrame frame = new JFrame(TITLE);
 

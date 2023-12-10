@@ -155,7 +155,7 @@ public class TTTMain extends JPanel {
                 JMenuItem quit = new JMenuItem("Quit");
                 JMenu background = new JMenu("Background");
                 JMenuItem bg1 = new JMenuItem("Snow");
-                JMenuItem bg2 = new JMenuItem("Tree");
+                JMenuItem bg2 = new JMenuItem("SnowTree");
 
                 //Setup main JPanel
                 TTTMain mainPanel= new TTTMain();

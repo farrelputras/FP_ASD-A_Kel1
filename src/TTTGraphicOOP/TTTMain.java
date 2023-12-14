@@ -141,7 +141,7 @@ public class TTTMain extends JPanel {
     }
 
     /** The entry "main" method */
-    public static void main(String[] args) {
+    public static void main(String[] argsx) {
         // Run GUI construction codes in Event-Dispatching thread for thread safety
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {

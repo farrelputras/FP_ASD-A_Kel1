@@ -36,7 +36,6 @@ public class TTTMain extends JPanel {
 
     /** Constructor to setup the UI and game components */
     public TTTMain() {
-
         // This JPanel fires MouseEvent
         super.addMouseListener(new MouseAdapter() {
             @Override
@@ -102,7 +101,7 @@ public class TTTMain extends JPanel {
 
     /** Custom painting codes on this JPanel */
     @Override
-    public void paintComponent(Graphics g) {  // Callback via repaint()
+    public void paintComponent(Graphics g) {
         super.paintComponent(g);
         setBackground(COLOR_BG); // set its background color
 
@@ -122,6 +121,9 @@ public class TTTMain extends JPanel {
             statusBar.setForeground(Color.RED);
             statusBar.setText("Player 2 Won! Click to play again.");
         }
+
+        // Center align the text in the status bar
+        statusBar.setHorizontalAlignment(SwingConstants.CENTER);
     }
 
     public void quitActionPerformed(ActionEvent evt){
@@ -144,7 +146,7 @@ public class TTTMain extends JPanel {
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 //pop up untuk welcome
-                JOptionPane.showMessageDialog(null, "Welcome! click OK to start game!", "Tic Tac Toe", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Welcome! click OK to start game! Tic Tac Toe");
 
                 JFrame frame = new JFrame(TITLE);
 
@@ -155,7 +157,7 @@ public class TTTMain extends JPanel {
                 JMenuItem quit = new JMenuItem("Quit");
                 JMenu background = new JMenu("Background");
                 JMenuItem bg1 = new JMenuItem("Snow");
-                JMenuItem bg2 = new JMenuItem("SnowTree");
+                JMenuItem bg2 = new JMenuItem("Board");
 
                 //Setup main JPanel
                 TTTMain mainPanel= new TTTMain();
@@ -166,7 +168,7 @@ public class TTTMain extends JPanel {
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setLocationRelativeTo(null); // center the application window
-
+                frame.setResizable(false);
                 //Add to menubar
                 menubar.add(game);
                 game.add(newGame);
@@ -202,8 +204,6 @@ public class TTTMain extends JPanel {
                         mainPanel.chooseBg(e, 1);
                     }
                 });
-
-
                 frame.setVisible(true);            // show it
             }
         });

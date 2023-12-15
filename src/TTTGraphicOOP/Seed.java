@@ -1,3 +1,5 @@
+package TTTGraphicOOP;
+
 /**
  * ES234317-Algorithm and Data Structures
  * Semester Ganjil, 2023/2024
@@ -7,8 +9,6 @@
  * 2 - 5026221120 - M. Shalahuddin Arif Laksono
  * 3 - 5026221102 - Fernandio Farrel Putra S.
  */
-
-package TTTGraphicOOP;
 
 /**
  * This enum is used by:

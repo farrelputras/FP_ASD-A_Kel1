@@ -1,3 +1,5 @@
+package TTTGraphicOOP;
+
 /**
  * ES234317-Algorithm and Data Structures
  * Semester Ganjil, 2023/2024
@@ -7,8 +9,6 @@
  * 2 - 5026221120 - M. Shalahuddin Arif Laksono
  * 3 - 5026221102 - Fernandio Farrel Putra S.
  */
-
-package TTTGraphicOOP;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -33,12 +33,12 @@ public class Board {
     /** Composes of 2D array of ROWS-by-COLS TTT_Tutorial.Cell instances */
     Cell[][] cells;
     private Image backgroundImage;
-    private String[] bgArray = {"BackgroundNatal.jpg", "BackgroundNatal1.jpg"};  // Gambar latar belakang
+    private String[] bgArray = {"BackgroundNatal.jpg", "BackgroundNatal1.jpg"};  // bg image in an array
 
     /** Constructor to initialize the game board */
     public Board() {
         initGame();
-        loadImage(1);  // Memuat gambar latar belakang
+        loadImage(1);  // load image in array
     }
 
     /** Initialize the game objects (run once) */
@@ -128,7 +128,6 @@ public class Board {
 
     /** Memuat gambar latar belakang dari file */
     public void loadImage(int idx) {
-        // Ganti "path/to/your/background.jpg" dengan path yang benar ke file gambar latar belakang Anda
         try {
             ImageIcon icon = new ImageIcon(bgArray[idx]);
             backgroundImage = icon.getImage();

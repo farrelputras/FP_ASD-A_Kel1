@@ -1,3 +1,5 @@
+package TTTGraphicOOP;
+
 /**
  * ES234317-Algorithm and Data Structures
  * Semester Ganjil, 2023/2024
@@ -7,8 +9,6 @@
  * 2 - 5026221120 - M. Shalahuddin Arif Laksono
  * 3 - 5026221102 - Fernandio Farrel Putra S.
  */
-
-package TTTGraphicOOP;
 
 import java.awt.*;
 import javax.imageio.ImageIO;
@@ -26,8 +26,8 @@ public class Cell {
     public static final int SEED_SIZE = SIZE - PADDING * 2;
     public static final int SEED_STROKE_WIDTH = 8; // pen's stroke width
 
-    private BufferedImage crossImage;  // Gambar untuk ikon X
-    private BufferedImage noughtImage; // Gambar untuk ikon O
+    private BufferedImage crossImage;  // image for X
+    private BufferedImage noughtImage; // image for O
 
     // Define properties (package-visible)
     /** Content of this cell (TTT_Tutorial.Seed.EMPTY, TTT_Tutorial.Seed.CROSS, or TTT_Tutorial.Seed.NOUGHT) */
@@ -40,8 +40,7 @@ public class Cell {
         this.row = row;
         this.col = col;
         content = Seed.NO_SEED;
-        
-        // Load gambar X dan O di sini (pastikan pathnya sesuai)
+
         try {
             crossImage = ImageIO.read(new File("treenatal.png"));
             noughtImage = ImageIO.read(new File("boxnatal.png"));

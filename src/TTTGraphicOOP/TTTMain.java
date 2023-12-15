@@ -24,8 +24,8 @@ public class TTTMain extends JPanel {
     public static final String TITLE = "Tic Tac Toe";
     public static final Color COLOR_BG = Color.WHITE;
     public static final Color COLOR_BG_STATUS = new Color(216, 216, 216);
-    public static final Color COLOR_CROSS = new Color(239, 105, 80);  // Red #EF6950
-    public static final Color COLOR_NOUGHT = new Color(64, 154, 225); // Blue #409AE1
+//    public static final Color COLOR_CROSS = new Color(239, 105, 80);  // Red #EF6950
+//    public static final Color COLOR_NOUGHT = new Color(64, 154, 225); // Blue #409AE1
     public static final Font FONT_STATUS = new Font("OCR A Extended", Font.PLAIN, 14);
 
     // Define game objects
@@ -67,7 +67,7 @@ public class TTTMain extends JPanel {
         // Setup the status bar (JLabel) to display status message
         statusBar = new JLabel();
         statusBar.setFont(FONT_STATUS);
-        statusBar.setBackground(COLOR_BG_STATUS);
+//        statusBar.setBackground(COLOR_BG_STATUS);
         statusBar.setOpaque(true);
         statusBar.setPreferredSize(new Dimension(300, 30));
         statusBar.setHorizontalAlignment(JLabel.LEFT);
@@ -143,8 +143,8 @@ public class TTTMain extends JPanel {
         // Run GUI construction codes in Event-Dispatching thread for thread safety
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                //pop up untuk welcome
-                JOptionPane.showMessageDialog(null, "Welcome! click OK to start game!", "Tic Tac Toe
+                //pop up menu
+                JOptionPane.showMessageDialog(null, "Welcome! click OK to start game! Tic Tac Toe");
 
                 JFrame frame = new JFrame(TITLE);
 
@@ -155,7 +155,7 @@ public class TTTMain extends JPanel {
                 JMenuItem quit = new JMenuItem("Quit");
                 JMenu background = new JMenu("Background");
                 JMenuItem bg1 = new JMenuItem("Snow");
-                JMenuItem bg2 = new JMenuItem("Tree");
+                JMenuItem bg2 = new JMenuItem("Board");
 
                 //Setup main JPanel
                 TTTMain mainPanel= new TTTMain();
@@ -205,6 +205,7 @@ public class TTTMain extends JPanel {
 
 
                 frame.setVisible(true);            // show it
+                frame.setResizable(false);
             }
         });
     }

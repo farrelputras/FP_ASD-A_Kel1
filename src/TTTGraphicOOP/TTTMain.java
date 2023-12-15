@@ -122,6 +122,9 @@ public class TTTMain extends JPanel {
             statusBar.setForeground(Color.RED);
             statusBar.setText("Player 2 Won! Click to play again.");
         }
+
+        // Center align the text in the status bar
+        statusBar.setHorizontalAlignment(SwingConstants.CENTER);
     }
 
     public void quitActionPerformed(ActionEvent evt){
@@ -166,6 +169,7 @@ public class TTTMain extends JPanel {
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setLocationRelativeTo(null); // center the application window
+                frame.setResizable(false);
 
                 //Add to menubar
                 menubar.add(game);
@@ -202,10 +206,7 @@ public class TTTMain extends JPanel {
                         mainPanel.chooseBg(e, 1);
                     }
                 });
-
-
                 frame.setVisible(true);            // show it
-                frame.setResizable(false);
             }
         });
     }

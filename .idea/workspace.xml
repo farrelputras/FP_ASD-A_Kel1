@@ -47,15 +47,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "C:/Users/ferna/OneDrive - Institut Teknologi Sepuluh Nopember/04_MATA KULIAH/SEMESTER 3/ASD [A]/TicTacToe_FP_ASD-A_Kel1",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ferna/OneDrive - Institut Teknologi Sepuluh Nopember/04_MATA KULIAH/SEMESTER 3/ASD [A]/TicTacToe_FP_ASD-A_Kel1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ferna\OneDrive - Institut Teknologi Sepuluh Nopember\04_MATA KULIAH\SEMESTER 3\ASD [A]\TicTacToe_FP_ASD-A_Kel1" />
@@ -154,6 +154,7 @@
     <MESSAGE value="TTT Graph OOP // New Package" />
     <MESSAGE value="Button Onyx" />
     <MESSAGE value="Bar Modify Onyx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bar Modify Onyx" />
+    <MESSAGE value="adjustment" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjustment" />
   </component>
 </project>

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43725078-9281-45bd-b5a3-898475c69f93" name="Changes" comment="">
+    <list default="true" id="81e19ce3-1e1a-47d0-b54a-7e2cb75caead" name="Changes" comment="Bar Modify Onyx">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TTTGraphicOOP/TTTMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TTTGraphicOOP/TTTMain.java" afterDir="false" />
     </list>
@@ -15,33 +14,151 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="24acdc00-8f4a-406f-a1df-1e2889b28d24" />
+        <option name="url" value="https://github.com/farrelputras/FP_ASD-A_Kel1.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../../../../../Program Files/Java/jdk-19/lib/src.zip!/java.desktop/java/awt/event/ActionListener.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../../../../../Program Files/Java/jdk-19/lib/src.zip!/java.desktop/java/awt/event/MouseAdapter.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2ZZN3awENrAUMkm0twHKjStiuQ8" />
+  <component name="ProjectId" id="2Yo0J6QVlB5Y433FL7fUjyjARVg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/1 Kuliah Fidha/Sem 3/ASD/TicTacToe_FP_ASD-A_Kel1/TicTacToe_FP_ASD-A_Kel1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ferna/OneDrive - Institut Teknologi Sepuluh Nopember/04_MATA KULIAH/SEMESTER 3/ASD [A]/TicTacToe_FP_ASD-A_Kel1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ferna\OneDrive - Institut Teknologi Sepuluh Nopember\04_MATA KULIAH\SEMESTER 3\ASD [A]\TicTacToe_FP_ASD-A_Kel1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ferna\OneDrive - Institut Teknologi Sepuluh Nopember\04_MATA KULIAH\SEMESTER 3\ASD [A]\TicTacToe_FP_ASD-A_Kel1" />
+      <recent name="C:\Users\ferna\OneDrive - Institut Teknologi Sepuluh Nopember\04_MATA KULIAH\SEMESTER 3\ASD [A]\TicTacToe_FP_ASD-A_Kel1\src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="43725078-9281-45bd-b5a3-898475c69f93" name="Changes" comment="" />
-      <created>1702625442160</created>
+      <changelist id="81e19ce3-1e1a-47d0-b54a-7e2cb75caead" name="Changes" comment="" />
+      <created>1701176552837</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1702625442160</updated>
+      <updated>1701176552837</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1701176775641</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701176775641</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <created>1701176846694</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701176846694</updated>
+    </task>
+    <task id="LOCAL-00003" summary="TTT Object-Oriented">
+      <created>1701738313641</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701738313641</updated>
+    </task>
+    <task id="LOCAL-00004" summary="TTT Object-Oriented">
+      <created>1701738367855</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701738367855</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Rename Project">
+      <created>1701741725752</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701741725752</updated>
+    </task>
+    <task id="LOCAL-00006" summary="TTT Graph OOP // New Package">
+      <created>1701846089456</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701846089456</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Button Onyx">
+      <created>1701852384341</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701852384341</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Button Onyx">
+      <created>1701852533173</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701852533173</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Button Onyx">
+      <created>1701942332869</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701942332869</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Bar Modify Onyx">
+      <created>1702018254304</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702018254304</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="TTT Object-Oriented" />
+    <MESSAGE value="Rename Project" />
+    <MESSAGE value="TTT Graph OOP // New Package" />
+    <MESSAGE value="Button Onyx" />
+    <MESSAGE value="Bar Modify Onyx" />
+    <MESSAGE value="adjustment" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjustment" />
   </component>
 </project>

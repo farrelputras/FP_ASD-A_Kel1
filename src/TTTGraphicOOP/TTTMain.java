@@ -167,13 +167,16 @@ public class TTTMain extends JPanel {
                         ImageIcon icon = new ImageIcon("group1.jpg"); // Ganti dengan path gambar sesuai kebutuhan
 
                         // Scale the image to fit the dialog
-                        ImageIcon scaledIcon = new ImageIcon(icon.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(icon.getImage().getScaledInstance(400, 300, Image.SCALE_SMOOTH));
 
                         // Create a panel to hold the image and text
                         JPanel panel = new JPanel(new BorderLayout());
                         JLabel imageLabel = new JLabel(scaledIcon);
                         imageLabel.setHorizontalAlignment(JLabel.CENTER);
-                        JLabel textLabel = new JLabel("<html><center>Tic Tac Toe<br>Version 1.0<br>Created by Group 1</center></html>");
+                        JLabel textLabel = new JLabel("<html><center>Tic Tac Toe<br>Version 1.0<br>Created by Group 1<br>" +
+                                "5026221035 - Mufidhatul Nafisa<br>" +
+                                "5026221120 - M. Shalahuddin Arif Laksono<br>" +
+                                "5026221102 - Fernandio Farrel Putra S.</center></html>");
                         textLabel.setHorizontalAlignment(JLabel.CENTER);
                         panel.add(imageLabel, BorderLayout.CENTER);
                         panel.add(textLabel, BorderLayout.SOUTH);
@@ -207,7 +210,7 @@ public class TTTMain extends JPanel {
                 background.add(bg1);
                 background.add(bg2);
                 menubar.add(about);
-
+                frame.setJMenuBar(menubar);
 
                 newGame.addActionListener(new ActionListener()
                 {
@@ -235,8 +238,7 @@ public class TTTMain extends JPanel {
                         mainPanel.chooseBg(e, 1);
                     }
                 });
-                frame.setJMenuBar(menubar);
-                frame.setVisible(true);          // show it
+                frame.setVisible(true);            // show it
             }
         });
     }

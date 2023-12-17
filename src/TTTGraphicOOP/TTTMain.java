@@ -160,6 +160,34 @@ public class TTTMain extends JPanel {
                 JMenuItem bg1 = new JMenuItem("Snow");
                 JMenuItem bg2 = new JMenuItem("Board");
 
+                JMenuItem about = new JMenuItem("About");
+                about.addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        // Load the image
+                        ImageIcon icon = new ImageIcon("group1.jpg"); // Ganti dengan path gambar sesuai kebutuhan
+
+                        // Scale the image to fit the dialog
+                        ImageIcon scaledIcon = new ImageIcon(icon.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH));
+
+                        // Create a panel to hold the image and text
+                        JPanel panel = new JPanel(new BorderLayout());
+                        JLabel imageLabel = new JLabel(scaledIcon);
+                        imageLabel.setHorizontalAlignment(JLabel.CENTER);
+                        JLabel textLabel = new JLabel("<html><center>Tic Tac Toe<br>Version 1.0<br>Created by Group 1</center></html>");
+                        textLabel.setHorizontalAlignment(JLabel.CENTER);
+                        panel.add(imageLabel, BorderLayout.CENTER);
+                        panel.add(textLabel, BorderLayout.SOUTH);
+
+                        // Show the dialog with the image and text
+                        JOptionPane.showMessageDialog(
+                                null,
+                                panel,
+                                "About",
+                                JOptionPane.PLAIN_MESSAGE
+                        );
+                    }
+                });
+
                 //Setup main JPanel
                 TTTMain mainPanel= new TTTMain();
                 Board board1 = new Board();
@@ -178,7 +206,8 @@ public class TTTMain extends JPanel {
                 menubar.add(background);
                 background.add(bg1);
                 background.add(bg2);
-                frame.setJMenuBar(menubar);
+                menubar.add(about);
+
 
                 newGame.addActionListener(new ActionListener()
                 {
@@ -206,7 +235,8 @@ public class TTTMain extends JPanel {
                         mainPanel.chooseBg(e, 1);
                     }
                 });
-                frame.setVisible(true);            // show it
+                frame.setJMenuBar(menubar);
+                frame.setVisible(true);          // show it
             }
         });
     }
